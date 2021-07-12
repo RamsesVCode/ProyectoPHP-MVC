@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+#activamos el mod_rewrite
+RewriteEngine on
+
+#para los errores
+ErrorDocument 404 http://localhost/MiProyectoConMVC/error/
+
+#condiciones
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+#reglas
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+</IfModule>

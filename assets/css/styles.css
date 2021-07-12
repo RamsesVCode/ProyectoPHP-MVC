@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family:sans-serif, Arial, Helvetica;
+}
+body{
+    background:url('../img/bg.png');
+}
+a{
+    color:#01B1EA; 
+}
+a:visited{
+    color:#01B1EA;
+}
+a:hover{
+    color:#555555;
+}
+/*CONTAINER*/
+#container{
+    width:80%;
+    margin:0 auto;
+    box-shadow:0px 0px 10px gray;
+    background: white;
+}
+
+/*HEADER*/
+#header{
+    height:145px;
+    background:#F0F0F0;
+
+}
+#logo{
+    padding:22px;
+    margin-left:20px;
+}
+#logo img{
+    height:100px;
+    float:left;
+}
+#logo a{
+    float:left;
+    font-size:15px;
+    letter-spacing:2px;
+    font-family:'Open sans', Helvetica, Arial;
+    text-transform: uppercase;
+    color:#01B1EA;
+    font-weight:bold;
+    text-decoration:none;
+    margin-top:35px;
+    margin-left:20px;
+    text-shadow:0px 2px 1px #222;
+    transition:all 300ms;
+}
+#logo a:hover{
+    text-shadow:0px 2px 1px #222, 0px 0px 4px #01B1EA;
+}
+
+/*MENU*/
+#menu{
+    clear:both;
+    background:#222;
+    color:white;
+    height:55px;
+    border-bottom:4px solid #01B1EA;
+}
+
+#menu ul{
+    list-style:none;
+    text-decoration:none;
+    margin:0 auto;
+    margin-left:25px;
+} 
+
+#menu ul li{
+    line-height:55px;
+    float:left;
+    border-right:1px solid #363636;
+}
+#menu a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding-left:12px;
+    padding-right:12px;
+    transition:all 300ms;
+}
+#menu a:first-child{
+    border-left:1px solid #363636;
+}
+#menu a:hover{
+    background:#01B1EA;
+}
+/*CONTENT*/
+#content{
+    margin: 0px auto;
+    overflow: hidden;
+    background: white;
+}
+
+/*BARRA LATERAL*/
+#lateral{
+    width: 22%;
+    min-height: 500px;
+    float: left;
+    margin-top:20px;
+    margin-left: 10px;
+}
+
+#lateral .block_aside{
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+#lateral h3{
+    display: block;
+    color: #222;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #E1E1E1;
+    border-bottom: 2px solid #01B1EA;
+}
+
+#lateral ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#lateral ul li{
+    list-style: square;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#lateral form{
+    margin-bottom: 20px;
+}
+/*FORMS*/
+.form_container{
+    width: 50%;
+}
+
+label,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select, textarea{
+    display:block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select, textarea{
+    border: 1px solid #C9C9C9;
+    box-shadow: 0px 0px 2px #ccc inset;
+    background: white;
+    padding: 2px;
+    color: gray;
+    transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus{
+    border: 1px solid #1579b5;
+    color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+button, .button{
+    display: block;
+    border-radius: 2px;
+    width: auto;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background: #2979CD;
+    border: 1px solid #11608E;
+    cursor:pointer;
+}
+
+.button{
+    background: #33AE3D;
+    color: white !important;
+    text-decoration: none;
+}
+
+.button-small{
+    width: 120px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-gestion{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button-red{
+    background: red;
+    border: 1px solid #cf1717;
+}
+
+label, 
+input[type="button"],
+input[type="submit"],
+button{
+    display:block;
+    margin-top: 10px;
+}
+
+/*CENTRAL*/
+#central{
+    width:70%;
+    float:right;
+    border-left:1px solid #CCC;
+    box-shadow:-5px -1px 5px #DDD;
+    padding:25px;
+    min-height:500px;
+}
+#central h1{
+    font-size:24px;
+    text-align:center;
+    font-weight:normal;
+    letter-spacing:1px;
+    border-bottom:1px solid #CCC;
+    margin-bottom:20px;
+}
+/*PRODUCTOS*/
+.product{
+    width:30%;
+    float:left;
+    margin-left:8px;
+    margin-right:8px;
+    text-align:center;
+    margin-bottom: 30px;
+}
+.product h2{
+    font-size:18px;
+    margin-bottom: 10px;
+}
+
+.product img{
+    width:150px;
+    height:170px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.product p{
+    margin-bottom: 10px;
+    font-weight:bold;
+    color:#555;
+}
+.product a{
+    color:initial;
+    text-decoration: none;
+}
+.product a:hover{
+    color:#555;
+}
+/*FOOTER*/
+#footer{
+    clear: both;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+    color: white;
+    background: #222222;
+    border-top: 4px solid #01B1EA;
+}
+.alerta_green{
+    color:green;
+}
+.alerta_red{
+    color:red;
+}
+/*GESTION DE PRODUCTOS*/
+.ges-pro{
+    width: 110px;
+    text-align: center;
+}
+.table{
+    margin-top:15px;
+    width: 100%;
+}
+.table th,td{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.table td a{
+    width: 90px;
+    margin:4px auto;
+}
+.table img{
+    width: 100px;
+    height: 90px;
+    object-fit: cover;
+}
+.button.delete{
+    background-color: red;
+    border:1px solid red;
+}
+.form-container{
+    width: 300px;
+}
+.form-container img{
+    width: 150px;
+    height: 170px;
+    object-fit: cover;
+}
+/*PRODUCTO INDIVUDUAL*/
+.producto-container{
+    width: 100%;
+}
+.producto-container img{
+    width: 240px;
+    float:left;
+}
+.producto-container .producto-detail{
+    float:right;
+    width: 295px;
+}
+.producto-detail p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.producto-detail a{
+    width: 100px;
+    text-align: center;
+}
+.category{
+    width: 120px;
+    text-align: center;
+}
+/*CARRITO*/
+.carrito-detail{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.carrito-detail .options p{
+    font-weight: bold;
+    margin:5px auto;
+}
+.carrito-detail .options a{
+    width: 100px;
+    margin:0 auto;
+}
+.table .updown{
+    display: flex;
+    justify-content: center;
+    width: 72px;
+    margin:0 auto;
+}
+.table .updown a{
+    width: 10px;
+}
